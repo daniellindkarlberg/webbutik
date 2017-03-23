@@ -15,12 +15,22 @@ angular.module('user').
                     city: $scope.user.city
                 }
 
-                
+
 
                 userService.createUser(newUser).then(function () {
 
                     $location.path("/login");
 
+
+                }, function (errorResponse) {
+
+                    $scope.text = "Det gick inte att skapa ett konto!"
+
+
                 });
             };
         }]);
+
+
+
+
