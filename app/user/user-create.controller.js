@@ -1,6 +1,6 @@
 angular.module('user').
-    controller('userCreateController', ['$scope', '$location', 'userService', '$window',
-        function ($scope, $location, userService, $window) {
+    controller('userCreateController', ['$scope', '$location', 'userService',
+        function ($scope, $location, userService) {
             $scope.text = "";
 
             $scope.createUser = function () {
@@ -15,7 +15,7 @@ angular.module('user').
                     city: $scope.user.city
                 }
 
-                var user = newUser.firstName;
+                
 
                 userService.createUser(newUser).then(function () {
 
