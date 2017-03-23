@@ -1,0 +1,32 @@
+<header> <img src="app/img/logo.jpg" alt="logo" /></header>
+<nav class="navbar navbar-custom" ng-switch="status">
+    <div class="container-fluid">
+        <div class="navbar-header">
+
+
+        </div>
+        <ul class="nav navbar-nav">
+            <li ng-switch-when='loggedOut'><a href="/"><span class="glyphicon glyphicon-home" id="menuIcons"></span></a></li>
+            <li ng-switch-when='loggedIn'><a href="/" class="menuLinks"><span class="glyphicon glyphicon-home" id="menuIcons"></span> Inloggad som: {{name}}</a></li>
+
+
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+
+            <li ng-switch-when='loggedIn'><a href="/user-page" class="menuLinks"><span class="glyphicon glyphicon-edit" id="menuIcons"></span> Mina uppgifter</a></li>
+            <li ng-switch-when='loggedIn'><a href="/order" class="menuLinks"><span class="glyphicon glyphicon-briefcase" id="menuIcons" ></span> Mina köp</a></li>
+            <li ng-switch-when='loggedIn'><a href="#" class="menuLinks"><span class="glyphicon glyphicon-log-out" id="menuIcons" ng-click="logOut()" ></span> Logga ut</a></li>
+            <li>
+                <div class="cart">
+                    <cart-directive>
+                        <div>
+            </li>
+
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+
+            <li ng-switch-when='loggedOut'><a href="/user-create" class="menuLinks"><span class="glyphicon glyphicon-user" id="menuIcons"></span> Skapa Konto</a></li>
+            <li ng-switch-when='loggedOut'><a href="/login" class="menuLinks"><span class="glyphicon glyphicon-log-in" id="menuIcons" ></span> Logga In</a></li>
+        </ul>
+        </div>
+</nav>

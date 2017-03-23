@@ -1,0 +1,31 @@
+<h2>Mina uppgifter</h2>
+
+<table class="table table-condensed">
+    <thead>
+        <tr>
+            <th>Förnamn</th>
+            <th>Efternamn</th>
+            <th>Email</th>
+            <th>Telefon</th>
+            <th>Adress</th>
+            <th>Postnummer</th>
+            <th>Stad</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{user.firstName}}</td>
+            <td>{{user.lastName}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.phone}}</td>
+            <td>{{user.address}}</td>
+            <td>{{user.postalCode}}</td>
+            <td>{{user.city}}</td>
+
+
+        </tr>
+
+    </tbody>
+</table>
+
+<button class="btn btn-primary" ng-click="editUser()">Ändra</button>

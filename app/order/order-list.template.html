@@ -1,0 +1,29 @@
+<div class="row">
+    <div class="col-md-4">
+        <h2>Mina Köp</h2>
+        <h4>Totalbelopp: {{total | currency:"SEK"}} </h4>
+
+        <table class="table table-hover table-striped table-condensed">
+            <thead>
+                <tr>
+                    <th>
+                        <h4>Orderdatum</h4>
+                    </th>
+                    <br>
+
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr ng-repeat="order in orders | orderBy:'$index':true" ng-click="viewOrder(order.id)">
+                    <td>
+                        <p>{{ order.dateTime | date:'yyyy-MM-dd'}}</p>
+                    </td>
+
+                </tr>
+
+            </tbody>
+        </table>
+
+    </div>
+</div>

@@ -1,0 +1,215 @@
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+ 
+.btn-primary {
+    background:yellow;
+    color:black;
+    outline:  0 none;
+}
+
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: black;
+    color: floralwhite;
+}
+
+.btn-success {
+    background: #4bbfac;
+    color: #ffffff;
+}
+
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .open > .dropdown-toggle.btn-success {
+    background: #30b09b;
+}
+ 
+.btn-primary:active, .btn-primary.active {
+    background: yellow;
+    box-shadow: none;
+}
+
+a {
+    color: #777;
+}
+.form-control {
+    height: 45px;
+    border-radius: 0;
+}
+.alert-save-fade {
+  transition: all linear 0.5s;
+}
+.alert-save-fade.ng-hide {
+  opacity: 0;
+}
+
+ 
+ .parent{
+position: relative;
+  top: 0;
+  left: 0;
+}
+ .bilder{
+position: relative;
+max-height: 85%;
+max-width: 85%;
+
+    border: 10px solid #fff;
+  border-bottom: 15px solid #fff;
+  -webkit-box-shadow: 2px 2px 2px lightgray;
+     -moz-box-shadow: 2px 2px 2px lightgray;
+          box-shadow: 2px 2px 2px lightgray;
+
+}
+
+.soldout{
+
+position: absolute;
+  top: 5px;
+  left: 0px;
+  opacity: 0.50; 
+
+}
+
+
+.description-pic {
+    width: 50%;
+    height: auto;
+}
+
+.cart-pic {
+    width: 20%;
+    height: auto;
+}
+
+.glyphicon {
+    font-size: 70px;
+    color: black;
+}
+
+.infoGlyph{
+
+font-size: 20px;
+}
+
+.shoppingBadge-custom{
+    background: white;
+    position: absolute;
+    left:42px; 
+    top:20px;
+    font-size:13px;
+    z-index: 3;
+    color: black;
+}
+
+
+
+.outOfStock{
+    opacity: 0.40; 
+    background: #eee;
+    color: darkgray
+}
+
+#btnAddCart,
+#btnClose{
+    display: inline-block;
+    vertical-align: top;
+    
+}
+
+.navbar-custom {
+    background-color: hotpink;
+    border-radius: 7px;
+    
+}
+
+#arrowleft{
+
+color: hotpink;
+
+
+}
+
+#arrowright{
+
+color: yellow;
+
+}
+
+#menuIcons{
+
+    color: black;
+}
+
+#outOfStockMessage{
+
+font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 30px;
+
+}
+
+#searchField{
+
+font-family: Arial, Helvetica, sans-serif;
+font-size: 15px;
+
+
+}
+
+.menuText{
+
+
+color: black;
+
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.modal-header{
+
+background-color: hotpink;
+
+font-family: Arial, Helvetica, sans-serif;
+
+}
+.modal-body {
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
+}
+
+.nav > li > a:hover{
+    background-color: yellow;
+}
+
+
+ .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+            background-color: yellow;
+ }
+
+.menuLinks{
+
+
+color: yellow;
+
+font-family: Arial, Helvetica, sans-serif;
+font-size: 16px;
+
+
+}
+
+.sortText{
+
+font-family: Arial, Helvetica, sans-serif;
+font-size: 30px;
+
+}
+
+
+
+
+
+
+

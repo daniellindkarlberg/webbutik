@@ -1,0 +1,20 @@
+<div class="modal-header">
+    <h3 class="modal-title">Produktinfo: </h3>{{ description }}
+</div>
+<div class="modal-body">
+
+    <span> <img ng-src="{{imageUrl}}" alt="No image found" class="description-pic" ></span>
+
+    <span> <div data-ng-show="itemAdded" ng-class="{fade:doFade}" class="alert alert-success"> {{message}}</div></span>
+
+</div>
+<div class="modal-footer">
+    <span id="outOfStockMessage">{{showOutOfStock}}</span>
+    <div class="row">
+        <div class="col-sm-12 text-right">
+
+            <button id="btnAddCart" type="button" class="btn btn-default btn-md" data-ng-disabled="checkStock()" ng-click="addToCart()">Lägg i kundvagn</button>
+            <button id="btnClose" type="button" class="btn btn-danger btn-md" ng-click="ok()">Stäng</button>
+        </div>
+    </div>
+</div>

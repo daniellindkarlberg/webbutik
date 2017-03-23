@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-md-4">
+    <h3>Logga in</h3>
+    <form name="loginForm" novalidate ng-submit="logIn()">
+      <div class="form-group" ng-class="{'has-error': loginForm.email.$invalid}">
+        <input class="form-control" name="email" type="email" placeholder="Email" required ng-model="session.email" />
+        <span class="help-block" ng-show="loginForm.email.$error.required">Fyll i email!</span>
+      </div>
+      <div class="form-group" ng-class="{'has-error': loginForm.password.$invalid}">
+        <input class="form-control" name="password" type="password" placeholder="Password" required ng-model="session.password" />
+        <span class="help-block" ng-show="loginForm.password.$error.required">Fyll i lösenord!</span>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary pull-left" value="Login" title="Login" ng-disabled="!loginForm.$valid">
+           <span>Logga in</span>
+         </button>
+        <p class="text-danger">{{ text }} </p>
+      </div>
+       </form>
+ 
+
+       <button class="btn btn-default pull-left"  ng-click="createAccount()" >
+           <span>Skapa konto</span>
+       </button>
+  </div>
+</div>

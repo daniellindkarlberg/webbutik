@@ -1,0 +1,45 @@
+<div class="modal-header">
+    <h3 class="modal-title">Varor i kundvagn: </h3>{{ description }}
+</div>
+<div class="modal-body">
+    <table class="table table-striped table-condensed">
+
+        <thead>
+            <tr>
+                <th>Namn</th>
+                <th>Pris</th>
+                <th></th>
+                <th>Antal</th>
+                <th>Ta bort</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="product in products">
+
+                <td>{{ product.name }}</td>
+                <td>{{ product.price }}</td>
+                <td> <img ng-src="{{product.imageUrl}}" width="50"></td>
+
+                <td>
+                    <button style="font-size:0.5em;" class="btn btn-danger btn-xs" ng-click="decreaseItemCount(product)"><span style="font-size:2em;" class="glyphicon glyphicon-minus"></span></button>                    {{ product.quantity }}
+                    <button style="font-size:0.5em;" class="btn btn-success btn-xs" ng-click="increaseItemCount(product)"><span style="font-size:2em;" class="glyphicon glyphicon-plus"></span></button>
+
+                </td>
+                <td><button style="font-size:0.5em;" type="button" class="btn btn-danger btn-xs" ng-click="removeItem(product)"><span style="font-size:2em;" class="glyphicon glyphicon-remove"></span></button></td>
+
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+<div class="modal-footer">
+
+
+
+    <h5> Totalbelopp: {{products| sumTotal :'quantity':'price'}}</h5>
+
+    <button type="button" class="btn btn-default btn-md" ng-click="checkOut()" data-ng-disabled="checkItems()">Checkout</button>
+    <button type="button" class="btn btn-danger btn-md" ng-click="ok()">Stäng</button>
+
+
+</div>
