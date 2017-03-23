@@ -1,5 +1,5 @@
 angular.module("app").
-    service("webStoreService",
+    service("appService",
     function () {
 
     });
