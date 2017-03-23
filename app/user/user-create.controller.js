@@ -19,6 +19,8 @@ angular.module('user').
 
                 userService.createUser(newUser).then(function () {
 
+                    $location.path("/login");
+
                 });
             };
         }]);
