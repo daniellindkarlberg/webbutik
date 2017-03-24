@@ -13,9 +13,6 @@ angular.module('login').
                             isLoggedIn = true;
                             userInfo = response.data;
                             userId = userInfo.customerId;
-
-
-
                             $window.history.back();
 
                         }, function (error) {
